@@ -1,0 +1,40 @@
+/* =========================== */
+/*         BASE IMPORTS        */
+/* =========================== */
+@use "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Base styles
+@use "./base/reset";
+@use "./base/typography";
+@use "./base/utilities";
+
+// Layout
+@use "./layout/header";
+@use "./layout/footer";
+
+// Components
+@use "./components/btns";
+@use "./components/forms";
+@use "./components/cards";
+@use "./components/avatar";
+@use "./components/navbar";
+
+/* =========================== */
+/*         GLOBAL STYLES       */
+/* =========================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family;  // Bruker fonten fra typography
+  }
+  
+  main {
+    flex: 1; // Sørg for at main fyller all tom plass
+  }
+  
+  footer {
+    margin-top: auto; // Skyver footeren til bunn
+  }
+  
