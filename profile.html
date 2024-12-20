@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Auction House</title>
+    <link rel="stylesheet" href="./src/css/styles.css" /> <!-- Korrekt referanse til styles.css -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Auction House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbarContent">
+                    <!-- Navbar content fylles dynamisk av navbar.js -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1>Profile</h1>
+            <p class="lead">Manage your account and view your credits, listings, and bids.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- User Details -->
+        <div class="mb-4">
+            <h2>Your Details</h2>
+            <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+            <p><strong>Credits:</strong> <span id="credits">Loading...</span></p>
+            <div>
+                <p><strong>Avatar:</strong></p>
+                <img id="avatarImage" src="https://via.placeholder.com/150" alt="Avatar" class="rounded mb-2">
+                <form id="avatarForm">
+                    <label for="avatarURL" class="form-label">Update Avatar URL</label>
+                    <input type="text" class="form-control mb-2" id="avatarURL" placeholder="Paste new avatar URL">
+                    <button type="submit" class="btn btn-primary">Update Avatar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- User Listings -->
+        <div class="mt-4">
+            <h2>Your Listings</h2>
+            <ul class="list-group" id="userListings">
+                <!-- Dynamically populated listings will go here -->
+            </ul>
+        </div>
+
+        <!-- User Bids -->
+        <div class="mt-4">
+            <h2>Your Bids</h2>
+            <ul class="list-group" id="userBids">
+                <!-- Dynamically populated bids will go here -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Auction House. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar JS -->
+    <script type="module" src="./src/js/navbar.js"></script>
+
+    <!-- Profile JS -->
+    <script type="module" src="./src/js/profile.js"></script>
+</body>
+
+</html>
