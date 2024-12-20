@@ -80,3 +80,6 @@ https://project-exam-auction-website.netlify.app/
 
 ## Link to figma low fidelity design files
 https://www.figma.com/design/FZjayAF5vogRflDPTXCuZT/Auction-website-low-fidelity-design?m=auto&t=wEOCPU48sma0PSkI-1
+
+## Need to do contrast later, prio delivery now
+Will perform contrast test and do adjustments at a later point
