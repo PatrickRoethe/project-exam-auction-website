@@ -46,17 +46,20 @@ This project is the frontend for an auction website where users can list items f
 4. npm run dev ( run the development server)
 
 ## Structure
-/src: All source files.
-/css: SCSS files and compiled CSS.
-/js: JavaScript files handling logic (e.g., user login, registration, auction details).
-/html: HTML templates for pages like home, profile, login, register, etc.
+
+- **`/src`**: All source files
+  - **`/css`**: SCSS files and compiled CSS
+  - **`/js`**: JavaScript files handling logic (e.g., user login, registration, auction details)
+  - **`/html`**: HTML templates for pages like home, profile, login, register, etc.
+
 
 
 ## User Stories Implemented
-Users can register and login with a stud.noroff.no email.
-Registered users can create, edit, and view auction listings.
-Registered users can place bids on other listings and see their bids.
-Unregistered users can search and view auction listings.
+- Users can register and login with a stud.noroff.no email.
+- Registered users can create, edit, and view auction listings.
+- Registered users can place bids on other listings and see their bids.
+- Unregistered users can search and view auction listings.
+- User can logout
 
 ## Future Improvements
 - Enhance styling
@@ -67,4 +70,7 @@ Unregistered users can search and view auction listings.
 - Styling for avatar, and better styling for profile page
 
 ## Learning points
-Plan better, start earlier, be consistent!
+- Plan better and start earlier.
+- Be more consistent with the workflow.
+- Improve time management for smoother progress.
+- Bad planning takes away from the enjoyment of the procsess and also learning.
