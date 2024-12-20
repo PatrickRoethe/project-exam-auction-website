@@ -18,3 +18,23 @@
 @use "./components/cards";
 @use "./components/avatar";
 @use "./components/navbar";
+
+/* =========================== */
+/*         GLOBAL STYLES       */
+/* =========================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family;  // Bruker fonten fra variablene
+  }
+  
+  main {
+    flex: 1; // Sørg for at main fyller all tom plass
+  }
+  
+  footer {
+    margin-top: auto; // Skyver footeren til bunn
+  }
+  
