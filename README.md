@@ -87,3 +87,6 @@ Will perform contrast test and do adjustments at a later point
 ## Log in
 Password123!
 patroe01271@stud.noroff.no
+
+## Project board ( github)
+https://github.com/users/PatrickRoethe/projects/6
