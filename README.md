@@ -74,3 +74,6 @@ This project is the frontend for an auction website where users can list items f
 - Be more consistent with the workflow.
 - Improve time management for smoother progress.
 - Bad planning takes away from the enjoyment of the procsess and also learning.
+
+## Link to deployment
+https://project-exam-auction-website.netlify.app/
