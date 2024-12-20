@@ -77,3 +77,6 @@ This project is the frontend for an auction website where users can list items f
 
 ## Link to deployment
 https://project-exam-auction-website.netlify.app/
+
+## Link to figma low fidelity design files
+https://www.figma.com/design/FZjayAF5vogRflDPTXCuZT/Auction-website-low-fidelity-design?m=auto&t=wEOCPU48sma0PSkI-1
