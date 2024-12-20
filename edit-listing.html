@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Auction | Auction House</title>
-    <link rel="stylesheet" href="./src/css/styles.css" /> <!-- Korrekt referanse til styles.css -->
+    <title>Edit Listing | Auction House</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
 </head>
 
 <body>
@@ -28,34 +28,44 @@
     <!-- Header -->
     <header class="bg-secondary text-white text-center py-5">
         <div class="container">
-            <h1>Create Auction</h1>
-            <p class="lead">List your item for bidding!</p>
+            <h1>Edit Listing</h1>
+            <p class="lead">Choose a listing to edit or update its details below.</p>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container my-5">
-        <form id="createAuctionForm">
+        <!-- Dropdown for å bytte mellom oppføringer -->
+        <div class="mb-3">
+            <label for="listingDropdown" class="form-label">Choose Listing</label>
+            <select id="listingDropdown" class="form-select">
+                <!-- Dynamisk innhold fylles inn her -->
+            </select>
+        </div>
+
+        <!-- Liste over brukerens oppføringer (vises kun hvis ingen ID er valgt) -->
+        <div id="userListings" class="list-group mb-4">
+            <p class="text-muted">Loading your listings...</p>
+        </div>
+
+        <!-- Edit listings form -->
+        <form id="editListingForm">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" placeholder="Auction title" required>
+                <input type="text" class="form-control" id="title" placeholder="Enter listing title" required>
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <textarea class="form-control" id="description" rows="3" placeholder="Describe your item"
-                    required></textarea>
+                <textarea class="form-control" id="description" rows="3" placeholder="Describe your listing"></textarea>
             </div>
             <div class="mb-3">
-                <label for="date" class="form-label">Deadline</label>
-                <input type="date" class="form-control" id="date" required>
-            </div>
-            <div class="mb-3">
-                <label for="media" class="form-label">Media Gallery</label>
+                <label for="media" class="form-label">Media URLs</label>
                 <textarea class="form-control" id="media" rows="3"
                     placeholder="Add image URLs, one per line"></textarea>
-                <small class="text-muted">Paste multiple image URLs for your listing.</small>
+                <small class="text-muted">Each URL must be publicly accessible.</small>
             </div>
-            <button type="submit" class="btn btn-primary">Create Listing</button>
+            <button type="submit" class="btn btn-primary">Update Listing</button>
+            <a href="profile.html" class="btn btn-secondary">Cancel</a>
         </form>
     </main>
 
@@ -70,8 +80,8 @@
     <!-- Navbar JS -->
     <script type="module" src="./src/js/navbar.js"></script>
 
-    <!-- Create Auction JS -->
-    <script type="module" src="./src/js/create-auction.js"></script>
+    <!-- Edit Listing JS -->
+    <script type="module" src="./src/js/edit-listing.js"></script>
 </body>
 
 </html>

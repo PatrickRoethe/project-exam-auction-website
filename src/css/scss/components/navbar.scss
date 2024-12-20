@@ -1,0 +1,11 @@
+/* =========================== */
+/*          NAVBAR             */
+/* =========================== */
+.navbar {
+    &.navbar-expand-lg {
+      background-color: $primary-color;  // Set background color for expanded navbar
+    }
+    &.navbar-dark {
+      background-color: #343a40;  // Dark navbar with a darker background
+    }
+  }
