@@ -83,3 +83,7 @@ https://www.figma.com/design/FZjayAF5vogRflDPTXCuZT/Auction-website-low-fidelity
 
 ## Need to do contrast later, prio delivery now
 Will perform contrast test and do adjustments at a later point
+
+## Log in
+Password123!
+patroe01271@stud.noroff.no
